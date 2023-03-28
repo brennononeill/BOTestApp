@@ -7,7 +7,7 @@ const client = new MongoClient(uri);
 
 async function run() {
   try {
-    const database = client.db('brennononeill');
+    const database = client.db('bomdb');
     const parts = database.collection('cmps415');
 
     // Query for a part that has partID '12345'
