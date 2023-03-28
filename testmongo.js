@@ -1,13 +1,13 @@
 const { MongoClient } = require("mongodb");
 
 // The uri string must be the connection string for the database (obtained on Atlas).
-const uri = "mongodb+srv://<username>:<pasword>@ckmdb.5oxvqja.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<username>:<password>@bomdb.g5uygmr.mongodb.net/?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri);
 
 async function run() {
   try {
-    const database = client.db('bomdb');
+    const database = client.db('brennononeill');
     const parts = database.collection('cmps415');
 
     // Query for a part that has partID '12345'
