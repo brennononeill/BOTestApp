@@ -11,7 +11,7 @@ async function run() {
     const parts = database.collection('cmps415');
 
     // Query for a part that has partID '1072'
-    const query = { partID: '1072' };
+    // const query = { partID: '1072' };
     const part = await parts.findOne(query);
 
     console.log(part);
